@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Crypto Net PHP Script Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">"Crypto Net PHP Script" Documentation by Tech Jindal (Version 5.5)</h3>
+		
+		<hr>
+		
+		<h1 class="center">Crypto Net</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 26/06/2018<br>
+					By: Tech Jindal<br>
+					Email: <a href="mailto:cryptonet@techjindal.com">cryptonet@techjindal.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our Crypto Net PHP Script. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="https://codecanyon.net/user/techjindal">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#server">Server Requirements</a></li>
+			<li><a href="#installation">Installation Guide</a></li>
+			<li><a href="#frontend">Front End</a></li>
+			<li><a href="#adminarea">Admin Area</a></li>
+			<li><a href="#gdpr">GDPR Compliance</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#api">API Usage</a></li>
+			<li><a href="#update">How to Update</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="server"><strong>A) Server Requirements</strong> - <a href="#toc">top</a></h3>
+<p>Please make sure that the following server requirements are met as listed:</p>
+		<ul><li>PHP version 5.5 or newer is recommended.
+
+It should work on 5.4.8 as well, but we strongly advise you NOT to run such old versions of PHP, because of potential security and performance issues, as well as missing features.</li>
+
+<li>URL rewrite enabled (usually enabled by default on most servers)</li>
+<li>MySQL 5.1.0 or above</li>
+<li>allow_url_fopen must be enabled in php.ini (if not enabled)</li>
+</ul> 
+
+		<hr>
+
+		<h3 id="installation"><strong>B) Installation Guide</strong> - <a href="#toc">top</a></h3>
+
+		<p>Please make sure that you meet the server requirements before starting installation.</p> 
+
+		<p>After purchasing CryptoNet PHP Script from Codecanyon, Download the complete zip package of our PHP script & extract it. It contains documentation folder and CryptoNet.zip files.</p>  
+		
+		<img src="assets/images/cryptonet-server-upload.jpg" width="75%"/>
+		<br/><br/>
+		<p>STEP 1: Upload the <b>CryptoNet.zip</b> folder to your server and uncompress/extract all the files to the root directory of your domain name on your web server. Normally the index.php file will be at your root. You can upload the package on your web server in two ways via FTP or File manager.</p> 
+
+		<img src="assets/images/cryptonet-files.jpg" width="75%"/>
+		<br/><br/>
+		
+		<p>STEP 2:  Create a MySQL database and database user on your server who has all the permissions to access and modify database.</p>
+If you do not know, how to create a database then ask for help to your hosting provider or search help topics on your hosting or search on any search engine for How to create a MYSQL database. You will found so many step by step guides and video tutorials.
+<br/><br/>
+<p>STEP 3: Run the auto installer script by accessing the URL <b>https://www.your-domain-name.com/install/</b> (If you have uploaded the files in the root directory of your domain) or <b>https://www.your-domain-name.com/subdirectory/install/</b> (If you have uploaded the files in the subdirectory of your domain) in a web browser.</p>
+Note: If you want to install the Corona Net PHP Script on Non-SSL Version of your domain name then firstly open .htaccess file in the root directory of your server and comment out the code in line 155 and 156 which is as follows:
+<br/><br/>
+Before Comment Out:
+<br/><br/>
+RewriteCond %{HTTPS} off<br/>
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+<br/><br/>
+After Comment Out:
+<br/><br/>
+#RewriteCond %{HTTPS} off<br/>
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+<br/><br/>
+After that, please use http instead of https in STEP 3.<br/><br/>
+<p>STEP 4: Enter the database details which you have created on your server in the STEP 2 and click <b>“Install”</b> button.</p>
+
+<img src="assets/images/cryptonet-db.jpg" width="50%"/>
+
+<p>STEP 5: On the next screen, Enter email and password to access admin area. Now, again Click <b>“Install”</b> button.</p>
+
+<img src="assets/images/cryptonet-admin.jpg" width="50%"/>
+
+<p>Congratulations, Your PHP Script is installed successfully now and you will redirected to your fully automated Cryptocurrency market capitalization website.</p>
+
+<p>You can access the admin area by visiting this URL <b>https://www.your-domain-name.com/admin/</b></p>
+
+		<hr>
+		
+		<h3 id="frontend"><strong>C) Front End</strong> - <a href="#toc">top</a></h3>
+		
+		<p>On the front end all the coin pages are automatically generated and for rest of the pages you can manage from admin panel. You can visit our CryptoNet PHP Script front end demo here: <a href="https://cryptonet.techjindal.com/" target="_blank">https://cryptonet.techjindal.com</a>. You can find the auto generated sitemap by accessing this url: your-domain.com/sitemap.xml</p>
+		
+		
+		<hr>
+		
+		<h3 id="adminarea"><strong>D) Admin Area</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You can access the admin area by visiting this URL http://www.your-domain-name.com/admin/ From the admin area, you can manage everything on the website.</p>
+
+<img src="assets/images/donation-cryptonet.png" width="100%"/>
+<p><b>Donation Box: Accept donations from your website in Cryptocurrency, You can accept donations in 4 type of Cryptocurrency which is fully editable from the admin area. You can edit Currency Name, Currency Logo, Coin Address.</b></p>
+
+<img src="assets/images/cmspages-cryptonet.png" width="100%"/>
+<p><b>Site Pages: There are 3 CMS Pages in the header Navigation and 3 CMS Pages are in the Footer Navigation. You can change the Title and Description of the CMS pages as per your requirement along with SEO meta title and description tags. You can Deactivate the extra pages from the admin area. The CMS pages position is fixed in the Header and Footer navigation. You can't change the Navigation in the website from the admin area and you can't create more content pages.</b></p>
+
+<img src="assets/images/contactentry-cryptonet.png" width="100%"/>
+<p><b>Contact Form: The entries which user fills on the contact us page are automatically submitted to your admin area.</b></p>
+
+<img src="assets/images/general-cryptonet.jpg" width="100%"/>
+<p><b>General Settings: You can change the Site logo, Favicon, Buy/Sell link (You can change the Buy/Sell button link with your affiliate link. On the website, Buy/Sell button is automatically integrated and the link you change is automatically changed on every Buy/Sell button in the website.), Footer Copyright text and Footer Ticker options (You can show or hide the Price ticker from the Footer) from the admin area.</b></p>
+
+<img src="assets/images/seo-cryptonet.png" width="100%"/>
+<p><b>SEO: You can easily add Google Analytics Tracking code and Google, Bing verification Meta tags to verify site ownership.</b></p>
+
+<img src="assets/images/ads-cryptonet.png" width="100%"/>
+<p><b>Ads Area: You can add Ads in the Header and Footer of the Cryptocurrency listing area. Easily show or hide ads with preference option you select.</b></p>
+
+<img src="assets/images/cta-cryptonet.png" width="100%"/>
+<p><b>Call to Action: Fully editable Call to Action area in the Footer section. Set your own button text and link.</b></p>
+
+<img src="assets/images/contactpage-cryptonet.png" width="100%"/>
+<p><b>Contact Page: You can change Address, Phone, Email and Social media links.</b></p>
+
+
+<img src="assets/images/customcss-cryptonet.png" width="100%"/>
+<p><b>Custom CSS: You can add your own style in the Custom CSS area.</b></p>
+		
+		<hr>
+		<h3 id="gdpr"><strong>E) GDPR Compliance</strong> - <a href="#toc">top</a></h3>
+		<p>We try our best to make CryptoNet PHP script GDPR Compliance. There is a consent to the user in the contact us page form. The user must accept consent before submitting the form and all the contact entries you can see from the backend. As per GDPR, if a user want to request or delete personal information then you can easily access or delete the contact form queries from the admin area.</p>
+		<p>Also, there is a cookie consent bar will be shown to the user in the header bar to accept privacy policy. You must create your own privacy policy as per GDPR. For the data request and removal process, you must mention your email address for this in your privacy policy.</p>
+		<p>If you want to show Google Adsense ads, then you can setup the non-personalised ads for the EU users from the Google Adsense dashboard.</p>
+		<p>If you want to add the Google Analytics code to the website admin area, then you must mention this as essential cookies in your privacy policy.</p>
+		
+		<hr>
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've used the following sources as listed:</p>
+
+		<ul>
+		<li>[Bootstrap] (https://getbootstrap.com/)</li>
+		<li>[CodeIgniter] (https://github.com/bcit-ci/CodeIgniter)</li>
+		<li>[CI-AdminLTE] (https://github.com/domProjects/CI-AdminLTE)</li>
+		<li>[CodeIgniter-Ion-Auth] (https://github.com/benedmunds/CodeIgniter-Ion-Auth)</li>
+		</ul>
+		
+
+		<hr>
+		
+		<h3 id="api"><strong>G) API Usage</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've used the following API as listed:</p>
+
+		<ul>
+		<li>[CoinCap API] (https://docs.coincap.io/)</li>
+		<li>[CoinGecko API] (https://www.coingecko.com/en/api/)</li>
+
+		</ul>
+
+<hr>
+		
+		<h3 id="update"><strong>H) How to Update</strong> - <a href="#toc">top</a></h3>
+		<p>Important Note: Before you get started, it’s a good idea to back up your website. This means if there are any issues you can restore your website.</p>
+		<p>How to update Crypto Net to version 5.4</p>
+<ul><li>Download Crypto Net from CodeCanyon and Unpack archive</li>
+<li>Open "CryptoNet.zip"</li>
+<li>Extract the “CryptoNet” directory to your computer</li>
+<li>Connect to your FTP server</li>
+<li>Upload the “application->controllers” & “application->core” & “application->views” directory to the “application->controllers” & “application->core” & “application->views” and rewrite all original files</li>
+<li>Upload the “assets” directory to the “/assets” and rewrite all original files</li>
+<li>Create the folder named "json" in the “upload” directory if you are updating from version 4.1 or below.</li>
+<li>Done</li>
+</uL>
+
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing Crypto Net PHP Script. As We said at the beginning, We'd be glad to help you if you have any questions relating to this PHP Script. No guarantees, but We'll do our best to assist. If you have a more general question relating to the CryptoNet PHP Script on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Made with ♥ by <a href="http://www.techjindal.com/">Tech Jindal</a> in India.</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
